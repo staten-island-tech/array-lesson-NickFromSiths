@@ -12,5 +12,16 @@ students.forEach((el) => console.log(el.name, el.grade));
 
 const topStudents = students
   .filter((el) => el.grade > 80)
+  .filter((topStudents) =>
+    console.log("Top student:", topStudents.name, topStudents.grade)
+  );
 
-  .filter((topStudents) => console.log(topStudents.name, topStudents.grade));
+const youngStudents = students
+  .filter((el) => el.age < 22)
+  .filter((youngStudents) =>
+    console.log(
+      "Students younger than 21:",
+      youngStudents.name,
+      youngStudents.age
+    )
+  );
