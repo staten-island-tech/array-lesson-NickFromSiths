@@ -33,9 +33,17 @@ console.log(categories);
 
 console.log(" ");
 
+// const electronics = products
+//   .filter((el) => el.category === "Electronics")
+//   .forEach(
+//     console.log(electronics.name, electronics.price, electronics.rating)
+//   );
+
+const electronics = products.filter(
+  (product) => product.category === "Electronics"
+);
 console.log("Electronics:");
-const electronics = products
-  .filter((el) => el.category === "Electronics")
-  .forEach(
-    console.log(electronics.name, electronics.price, electronics.rating)
-  );
+console.log(electronics);
+
+const expensiveProducts = products.filter((product) => product.price > 300);
+console.log("Expensive Products:", expensiveProducts);
